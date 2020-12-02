@@ -1,0 +1,32 @@
+\t (00:00:11) allegro 17.2 S013 Windows SPB 64-bit Edition
+\t (00:00:11)     Journal start - Thu May 09 22:09:22 2019
+\t (00:00:11)         Host=DESKTOP-HN9BTGS User=Usuario Pid=5160 CPUs=4
+\t (00:00:11) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\Users\Usuario\Documents\Orcad\Diseño no lineal\VCO\allegro\VCO.brd
+\t (00:00:11) 
+   (00:00:11) Loading axlcore.cxt 
+\t (00:00:13) Opening existing design...
+\d (00:00:13) Design opened: C:/Users/Usuario/Documents/Orcad/Diseño no lineal/VCO/allegro/VCO.brd
+\i (00:00:13) trapsize 1268
+\i (00:00:13) trapsize 1291
+\i (00:00:13) trapsize 1291
+\i (00:00:14) trapsize 1232
+\i (00:00:15) generaledit 
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out 28.4612 58.7161
+\i (00:00:16) trapsize 2464
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out 28.4613 58.4697
+\i (00:00:16) trapsize 4929
+\i (00:00:22) artwork 
+\w (00:00:22) For raster artwork formats, artwork accuracy must be at least one greater than the database accuracy, up to the maximum accuracy allowed by the selected output format. Change Format Decimal places.
+\i (00:00:34) fillin confirm
+\i (00:00:41) setwindow form.film_control
+\i (00:00:41) FORM film_control film_control  
+\i (00:00:44) FORM film_control general_parameters  
+\i (00:14:00) FORM film_control cancel  
+\i (00:14:00) setwindow pcb
+\i (00:14:00) generaledit 
+\i (00:14:01) exit 
+\t (00:14:02)     Journal end - Thu May 09 22:23:13 2019

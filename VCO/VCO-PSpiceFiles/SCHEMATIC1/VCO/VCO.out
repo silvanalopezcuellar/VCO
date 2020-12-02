@@ -1,0 +1,477 @@
+
+**** 02/05/19 16:31:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-VCO"  [ C:\Users\estudiante\Downloads\VCO\vco-pspicefiles\schematic1\vco.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "VCO.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\estudiante\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 0.1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source VCO
+X_U1A         N00448 N00444 VCC 0 N00490 TL074/301/TI
+X_U1B         N00490 V1 VCC 0 N00332 TL074/301/TI
+X_U1C         N00490 V2 VCC 0 N00350 TL074/301/TI
+R_R1         N00554 N00444  68k TC=0,0 
+R_R2         N00554 N00448  100k TC=0,0 
+R_R3         N00350 N00346  1k TC=0,0 
+R_R4         N00346 N00332  1k TC=0,0 
+R_R5         N00371 N00357  10k TC=0,0 
+R_R6         N00357 0  10k TC=0,0 
+R_R7         VCC N00357  10k TC=0,0 
+C_C1         N00444 N00490  100n IC=0 TC=0,0 
+R_R8         0 N00448  100k TC=0,0 
+R_R9         N00444 N00662  34k TC=0,0 
+R_R10         N00371 N14242  50k TC=0,0 
+X_Q1         N00662 N14242 0 awb2n2222 PARAMS:                                 
++            
+V_V4         VCC 0 15Vdc
+V_V5         N00554 0 8.153Vdc
+D_D1         N09126 N090801 D1N4148_1 
+D_D2         N09132 N09126 D1N4148_1 
+R_R11         N00490 N09126  1k TC=0,0 
+X_U6A         V4 N09126 VCC 0 N09132 LM324
+X_U6B         V3 N09126 VCC 0 N090801 LM324
+X_U7B         N00357 N00346 VCC 0 N00371 TL074/301/TI
+R_R20         0 N14242  10k TC=0,0 
+R_R21         V1 VCC  33k TC=0,0 
+R_R22         V3 V1  5k TC=0,0 
+R_R23         V75 V3  10k TC=0,0 
+R_R24         V2 V4  5k TC=0,0 
+R_R25         V2 0  33k TC=0,0 
+X_U8C         N09126 N15688 VCC 0 N15688 LM324
+X_U9A         V75 N16018 VCC 0 N16067 TL072/301/TI
+R_R26         N15688 N16018  20k TC=0,0 
+C_C2         N16018 N16067  100n  TC=0,0 
+R_R32         N16018 N16067  200k TC=0,0 
+C_C3         N16067 N22667  100n  TC=0,0 
+R_R33         0 N22667  300k TC=0,0 
+X_U9B         N22667 V75 VCC 0 N24802 TL072/301/TI
+R_R36         N22667 VCC  300k TC=0,0 
+R_R37         V4 V75  10k TC=0,0 
+
+**** RESUMING VCO.cir ****
+.END
+
+**** 02/05/19 16:31:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-VCO"  [ C:\Users\estudiante\Downloads\VCO\vco-pspicefiles\schematic1\vco.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148_1       X_U1A.DX        X_U1B.DX        X_U1C.DX        
+          IS    2.682000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.836                                                        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100                                                            
+         IBV  100.000000E-06                                                 
+          RS     .5664                                                       
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12                                                 
+          VJ     .5                                                          
+           M     .3333                                                       
+
+
+               X_U6A.dx        X_U6A.dy        X_U6B.dx        X_U6B.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U7B.DX        X_U8C.dx        X_U8C.dy        X_U9A.DX        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1               1.000000E-03                 
+         CJO                                   10.000000E-12                 
+
+
+               X_U9B.DX        
+          IS  800.000000E-18 
+
+
+**** 02/05/19 16:31:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-VCO"  [ C:\Users\estudiante\Downloads\VCO\vco-pspicefiles\schematic1\vco.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_U6A.qx        X_U6B.qx        X_U8C.qx        
+               NPN             PNP             PNP             PNP             
+       LEVEL    1               1               1               1            
+          IS  166.780000E-15  800.000000E-18  800.000000E-18  800.000000E-18 
+          EG    1.11                                                         
+          BF  150             166.7           166.7           166.7          
+          NF    1.074           1               1               1            
+         VAF   78                                                            
+         IKF     .5                                                          
+         ISE    3.920000E-12                                                 
+          NE    1.776                                                        
+          BR    2.394           1               1               1            
+          NR    1.074           1               1               1            
+         VAR  500                                                            
+          NC    1                                                            
+         ISS    0               0               0               0            
+          RB     .676                                                        
+         RBM     .676                                                        
+          RE     .1             0               0               0            
+          RC     .654           0               0               0            
+         CJE   22.250000E-12    0               0               0            
+         VJE    1.333            .75             .75             .75         
+         MJE     .522                                                        
+         CJC    8.370000E-12    0               0               0            
+         VJC    1.333            .75             .75             .75         
+         MJC     .518            .33             .33             .33         
+        XCJC     .5             1               1               1            
+         CJS    0               0               0               0            
+         VJS     .7              .75             .75             .75         
+         MJS     .5                                                          
+          TF  454.400000E-12                                                 
+         XTF   13.24                                                         
+         VTF    4.83                                                         
+         ITF     .2163                                                       
+          TR  117.500000E-09                                                 
+         XTB    2.34                                                         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.2             2.2          
+           D     .87             .52             .52             .52         
+
+
+**** 02/05/19 16:31:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-VCO"  [ C:\Users\estudiante\Downloads\VCO\vco-pspicefiles\schematic1\vco.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.JX        X_U1B.JX        X_U1C.JX        X_U7B.JX        
+               PJF             PJF             PJF             PJF             
+         VTO   -1              -1              -1              -1            
+        BETA  270.100000E-06  270.100000E-06  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
+
+
+               X_U9A.JX        X_U9B.JX        
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12 
+
+
+**** 02/05/19 16:31:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-VCO"  [ C:\Users\estudiante\Downloads\VCO\vco-pspicefiles\schematic1\vco.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U6A.sw2       X_U6A.sw1       X_U6A.sw3       X_U6A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U6B.sw2       X_U6B.sw1       X_U6B.sw3       X_U6B.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U8C.sw2       X_U8C.sw1       X_U8C.sw3       X_U8C.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+**** 02/05/19 16:31:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-VCO"  [ C:\Users\estudiante\Downloads\VCO\vco-pspicefiles\schematic1\vco.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V1)    9.8443  (   V2)    5.1572  (   V3)    9.0632  (   V4)    5.9385      
+
+(  V75)    7.5009  (  VCC)   15.0000  (N00332)    1.5229 (N00346)    1.5229     
+
+(N00350)    1.5229 (N00357)    9.4925 (N00371)   13.4770 (N00444)    4.0766     
+
+(N00448)    4.0765 (N00490)    4.0766 (N00554)    8.1530 (N00662)     .0147     
+
+(N09126)    5.9388 (N09132)    6.5737 (N14242)     .6179 (N15688)    5.9392     
+
+(N16018)    6.6244 (N16067)   13.4770 (N22667)    7.5000 (N24802)    1.6937     
+
+(N090801)   14.3160                   (X_U1A.6) 561.6E-06                       
+
+(X_U1A.7)    3.8062                   (X_U1A.8)    3.8062                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6)   19.8440                       
+
+(X_U1B.7)    1.4949                   (X_U1B.8)    1.4949                       
+
+(X_U1B.9)    0.0000                   (X_U1C.6)   19.8440                       
+
+(X_U1C.7)    1.4949                   (X_U1C.8)    1.4949                       
+
+(X_U1C.9)    0.0000                   (X_U6A.6) 147.9E-06                       
+
+(X_U6A.7)    6.6668                   (X_U6A.8)    6.6668                       
+
+(X_U6A.9)    0.0000                   (X_U6A.a)   14.9980                       
+
+(X_U6A.b)    -.0019                   (X_U6B.6)   -1.5124                       
+
+(X_U6B.7)   16.3470                   (X_U6B.8)   16.3470                       
+
+(X_U6B.9)    0.0000                   (X_U6B.a)   14.9590                       
+
+(X_U6B.b)    -.0406                   (X_U7B.6)  -20.0990                       
+
+(X_U7B.7)   13.6040                   (X_U7B.8)   13.6040                       
+
+(X_U7B.9)    0.0000                   (X_U8C.6) 294.7E-06                       
+
+(X_U8C.7)    5.9374                   (X_U8C.8)    5.9374                       
+
+(X_U8C.9)    0.0000                   (X_U8C.a) 35.81E-06                       
+
+(X_U8C.b) 34.31E-06                   (X_U9A.6)  -19.6000                       
+
+(X_U9A.7)   13.5100                   (X_U9A.8)   13.5100                       
+
+(X_U9A.9)    0.0000                   (X_U9B.6)     .0277                       
+
+(X_U9B.7)    1.6937                   (X_U9B.8)    1.6937                       
+
+(X_U9B.9)    0.0000                   (X_U1A.10)    3.6831                      
+
+(X_U1A.11)     .3513                  (X_U1A.12)     .3514                      
+
+(X_U1A.53)   12.8000                  (X_U1A.54)    2.2000                      
+
+(X_U1A.90)   -1.8027                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    7.5000                      
+
+(X_U1B.10)    3.9338                  (X_U1B.11) 87.85E-09                      
+
+(X_U1B.12)     .7018                  (X_U1B.53)   12.8000                      
+
+(X_U1B.54)    2.2000                  (X_U1B.90)    -.1871                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    7.5000                  (X_U1C.10)    3.9338                      
+
+(X_U1C.11) 71.28E-09                  (X_U1C.12)     .7018                      
+
+(X_U1C.53)   12.8000                  (X_U1C.54)    2.2000                      
+
+(X_U1C.90)    -.1871                  (X_U1C.91)   25.0000                      
+
+(X_U1C.92)  -25.0000                  (X_U1C.99)    7.5000                      
+
+(X_U6A.10)    6.5467                  (X_U6A.11)     .0398                      
+
+(X_U6A.12)     .0401                  (X_U6A.13)    6.5327                      
+
+(X_U6A.14)    6.5326                  (X_U6A.53)   13.5000                      
+
+(X_U6A.54)     .8220                  (X_U6A.90)    1.8620                      
+
+(X_U6A.91)   40.0000                  (X_U6A.92)  -40.0000                      
+
+(X_U6A.99)    7.5000                  (X_U6B.10)    6.5787                      
+
+(X_U6B.11)     .0799                  (X_U6B.12) 82.98E-09                      
+
+(X_U6B.13)    6.5508                  (X_U6B.14)    6.5787                      
+
+(X_U6B.53)   13.5000                  (X_U6B.54)     .8220                      
+
+(X_U6B.90)   40.6100                  (X_U6B.91)   40.0000                      
+
+(X_U6B.92)  -40.0000                  (X_U6B.99)    7.5000                      
+
+(X_U7B.10)    1.4056                  (X_U7B.11)     .7105                      
+
+(X_U7B.12) 86.61E-09                  (X_U7B.53)   12.8000                      
+
+(X_U7B.54)    2.2000                  (X_U7B.90)     .8452                      
+
+(X_U7B.91)   25.0000                  (X_U7B.92)  -25.0000                      
+
+(X_U7B.99)    7.5000                  (X_U8C.10)    6.5470                      
+
+(X_U8C.11)     .0398                  (X_U8C.12)     .0401                      
+
+(X_U8C.13)    6.5331                  (X_U8C.14)    6.5329                      
+
+(X_U8C.53)   13.5000                  (X_U8C.54)     .8220                      
+
+(X_U8C.90)    -.0343                  (X_U8C.91)   40.0000                      
+
+(X_U8C.92)  -40.0000                  (X_U8C.99)    7.5000                      
+
+(X_U9A.10)    6.4762                  (X_U9A.11)     .6930                      
+
+(X_U9A.12) 79.56E-09                  (X_U9A.53)   12.8000                      
+
+(X_U9A.54)    2.2000                  (X_U9A.90)     .2191                      
+
+(X_U9A.91)   25.0000                  (X_U9A.92)  -25.0000                      
+
+(X_U9A.99)    7.5000                  (X_U9B.10)    7.1018                      
+
+(X_U9B.11)     .3450                  (X_U9B.12)     .3459                      
+
+(X_U9B.53)   12.8000                  (X_U9B.54)    2.2000                      
+
+(X_U9B.90)-253.7E-06                  (X_U9B.91)   25.0000                      
+
+(X_U9B.92)  -25.0000                  (X_U9B.99)    7.5000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -5.039E-02
+    V_V5        -1.007E-04
+    X_U1A.VB     5.616E-09
+    X_U1A.VC     8.724E-12
+    X_U1A.VE     1.877E-12
+    X_U1A.VLIM  -1.803E-03
+    X_U1A.VLP   -2.680E-11
+    X_U1A.VLN   -2.320E-11
+    X_U1B.VB     1.984E-04
+    X_U1B.VC     1.128E-11
+    X_U1B.VE    -1.871E-04
+    X_U1B.VLIM  -1.871E-04
+    X_U1B.VLP   -2.519E-11
+    X_U1B.VLN   -2.481E-11
+    X_U1C.VB     1.984E-04
+    X_U1C.VC     1.128E-11
+    X_U1C.VE    -1.871E-04
+    X_U1C.VLIM  -1.871E-04
+    X_U1C.VLP   -2.519E-11
+    X_U1C.VLN   -2.481E-11
+    X_U6A.vb     1.479E-09
+    X_U6A.vc     6.927E-12
+    X_U6A.ve     5.640E-12
+    X_U6A.vlim   1.862E-03
+    X_U6A.vlp   -3.814E-11
+    X_U6A.vln   -4.187E-11
+    X_U6B.vb    -1.512E-05
+    X_U6B.vc    -4.061E-02
+    X_U6B.ve     1.338E-11
+    X_U6B.vlim   4.061E-02
+    X_U6B.vlp    1.400E-05
+    X_U6B.vln   -8.061E-11
+    X_U7B.VB    -2.010E-04
+    X_U7B.VC    -1.895E-04
+    X_U7B.VE     1.128E-11
+    X_U7B.VLIM   8.452E-04
+    X_U7B.VLP   -2.416E-11
+    X_U7B.VLN   -2.585E-11
+    X_U8C.vb     2.947E-09
+    X_U8C.vc     7.562E-12
+    X_U8C.ve     5.005E-12
+    X_U8C.vlim  -3.431E-05
+    X_U8C.vlp   -4.004E-11
+    X_U8C.vln   -3.997E-11
+    X_U9A.VB    -1.960E-04
+    X_U9A.VC    -1.848E-04
+    X_U9A.VE     1.128E-11
+    X_U9A.VLIM   2.191E-04
+    X_U9A.VLP   -2.478E-11
+    X_U9A.VLN   -2.522E-11
+    X_U9B.VB     2.773E-07
+    X_U9B.VC     1.111E-11
+    X_U9B.VE    -2.537E-07
+    X_U9B.VLIM  -2.537E-07
+    X_U9B.VLP   -2.500E-11
+    X_U9B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   8.19E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/05/19 16:31:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-VCO"  [ C:\Users\estudiante\Downloads\VCO\vco-pspicefiles\schematic1\vco.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        3.72
+  Total job time (using Solver 1)   =        2.05
+

@@ -1,0 +1,19 @@
+ANALOG
+Ch 2 Scale 660 mV/, Pos 8 mV, Coup DC, BW On, Inv Off, Imp 1M Ohm
+     Probe 10 : 1, Skew 0 s
+
+TRIGGER
+Sweep Mode Auto, Coup DC, Noise Rej Off, HF Rej Off, Holdoff 40.0 ns
+Mode EDGE, Source Ch 2, Slope NEG, Level 0 V
+
+HORIZONTAL
+Mode MAIN, Ref CENT, Main Scale 1.76 ms/, Main Delay 3.56 ms
+
+ACQUISITION
+Mode NORM, Realtime On, Vectors On, Persistence Off
+
+MEASUREMENTS
+RMS - Full Screen(1) Cur No signal
+Frequency(2) Cur No signal
+Minimum(1) Cur No signal
+Maximum(1) Cur No signal
